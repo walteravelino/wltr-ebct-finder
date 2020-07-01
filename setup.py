@@ -11,7 +11,7 @@ requirements = [
 ]
 
 setuptools.setup(
-    name="Wltr EBCT Finder",
+    name="wltr-ebct-finder",
     version="1.0.0",
     author="Walter Avelino",
     author_email="walter.avelin@gmail.com",

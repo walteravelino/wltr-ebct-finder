@@ -47,7 +47,7 @@ Essa API permite consultar os códigos postais e o endereço através da mesma c
 ```python
 >>> import wltr_ebct_finder
 
->>> address = wltr_ebct_finder.busca_cep('Rua Ramiro Barcelos')
+>>> address = wltr_ebct_finder.find_cep('Rua Ramiro Barcelos')
 >>> print(address)
 {'address': 'Rua Ramiro Barcelos', 'neighborhood': 'Vila Guarani (Z Sul)', 'city/state': 'São Paulo/SP', 'zipcode': '04311-050'}
 ```
@@ -55,7 +55,7 @@ Essa API permite consultar os códigos postais e o endereço através da mesma c
 ```python
 >>> import wltr_ebct_finder
 
->>> address = wltr_ebct_finder.busca_cep('04311-050')
+>>> address = wltr_ebct_finder.find_cep('04311-050')
 >>> print(address)
 {'address': 'Rua Ramiro Barcelos', 'neighborhood': 'Vila Guarani (Z Sul)', 'city/state': 'São Paulo/SP', 'zipcode': '04311-050'}
 ```
