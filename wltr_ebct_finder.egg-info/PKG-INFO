@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: wltr-ebct-finder
-Version: 1.0.0
+Version: 1.0.2
 Summary: API para consulta de endereços e CEPs através do site da Empresa Brasileira de Correios e Telégrafos
 Home-page: https://github.com/walteravelino/wltr-ebct-finder
 Author: Walter Avelino
@@ -55,7 +55,7 @@ Description: # Wltr EBCT Finder
         ```python
         >>> import wltr_ebct_finder
         
-        >>> address = wltr_ebct_finder.busca_cep('Rua Ramiro Barcelos')
+        >>> address = wltr_ebct_finder.find_cep('R. Ramiro Barcelos')
         >>> print(address)
         {'address': 'Rua Ramiro Barcelos', 'neighborhood': 'Vila Guarani (Z Sul)', 'city/state': 'São Paulo/SP', 'zipcode': '04311-050'}
         ```
@@ -63,7 +63,7 @@ Description: # Wltr EBCT Finder
         ```python
         >>> import wltr_ebct_finder
         
-        >>> address = wltr_ebct_finder.busca_cep('04311-050')
+        >>> address = wltr_ebct_finder.find_cep('04311-050')
         >>> print(address)
         {'address': 'Rua Ramiro Barcelos', 'neighborhood': 'Vila Guarani (Z Sul)', 'city/state': 'São Paulo/SP', 'zipcode': '04311-050'}
         ```

@@ -12,7 +12,7 @@ requirements = [
 
 setuptools.setup(
     name="wltr-ebct-finder",
-    version="1.0.1",
+    version="1.0.2",
     author="Walter Avelino",
     author_email="walter.avelin@gmail.com",
     description="API para consulta de endereços e CEPs através do site da Empresa Brasileira de Correios e Telégrafos",
