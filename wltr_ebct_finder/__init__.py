@@ -1,5 +1,5 @@
-from .ebct_api import find_cep
+from .ebct_api import find_data
 
 __all__ = [
-    'find_cep',
+    'find_data',
 ]

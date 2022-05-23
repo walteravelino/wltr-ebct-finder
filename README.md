@@ -26,36 +26,29 @@ Copyright © 2020 [Walter Avelino](https://github.com/walteravelino). <br />
 Os projetos estão sob a licença [MIT](https://github.com/walteravelino/Projetos/blob/master/LICENSE).
 
 
-## Requerimentos
-
-- beautifulsoup4
-- requests
-- unidecode
-
-
 ## Instalação
 
- A API Wltr EBCT Finder pode ser instalada usando pip:
+ A API Wltr EBCT Finder pode ser instalada utilizando o pip:
 
     $ pip install wltr-ebct-finder
 
 
 ## Guia rápido
 
-Essa API permite consultar os códigos postais e o endereço através da mesma chamada:
-
 ```python
 >>> import wltr_ebct_finder
 
->>> address = wltr_ebct_finder.find_cep('R. Ramiro Barcelos')
+>>> address = wltr_ebct_finder.find_data('04311050')
 >>> print(address)
-{'address': 'Rua Ramiro Barcelos', 'neighborhood': 'Vila Guarani (Z Sul)', 'city/state': 'São Paulo/SP', 'zipcode': '04311-050'}
-```
 
-```python
->>> import wltr_ebct_finder
-
->>> address = wltr_ebct_finder.find_cep('04311-050')
->>> print(address)
-{'address': 'Rua Ramiro Barcelos', 'neighborhood': 'Vila Guarani (Z Sul)', 'city/state': 'São Paulo/SP', 'zipcode': '04311-050'}
+    {'cep': '04311-050',
+     'logradouro': 'Rua Ramiro Barcelos',
+     'complemento': '',
+     'bairro': 'Vila Guarani (Z Sul)',
+     'localidade': 'São Paulo',
+     'uf': 'SP',
+     'ibge': '3550308',
+     'gia': '1004',
+     'ddd': '11',
+     'siafi': '7107'}
 ```

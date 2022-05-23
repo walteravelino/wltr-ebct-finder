@@ -1,73 +1,11 @@
 Metadata-Version: 2.1
 Name: wltr-ebct-finder
-Version: 1.0.2
-Summary: API para consulta de endereços e CEPs através do site da Empresa Brasileira de Correios e Telégrafos
+Version: 1.1.0
+Summary: API para consulta de endereço e CEP
 Home-page: https://github.com/walteravelino/wltr-ebct-finder
 Author: Walter Avelino
 Author-email: walter.avelin@gmail.com
 License: UNKNOWN
-Description: # Wltr EBCT Finder
-        
-        <a href="https://pypi.org/project/wltr-ebct-finder/">
-          <img alt="PyPI" src="https://img.shields.io/pypi/v/wltr-ebct-finder">
-        </a>
-        
-        [![Build Status](https://travis-ci.com/walteravelino/Projetos.svg?branch=master)](https://travis-ci.com/walteravelino/Projetos)
-        <img src = "https://img.shields.io/github/languages/top/walteravelino/wltr-ebct-finder">
-        <a href="https://github.com/walteravelino/Projetos/blob/master/LICENSE"><img src = "https://img.shields.io/github/license/walteravelino/Projetos"></a>
-        
-        Wltr EBCT Finder é uma API para consulta de endereços e CEP através do site da Empresa Brasileira de Correios e Telégrafos.
-        
-        ## Autor
-        
-        👤 **Walter Avelino**
-        
-        - StackOverFlow [@walteravelino](https://stackoverflow.com/users/13001807/walter-avelino)
-        - Github: [@walteravelino](https://github.com/walteravelino)
-        - Linkedin: [@walteravelino](https://linkedin.com/in/walter-avelino-434197105)
-        - DEV: [@walteravelino](https://dev.to/walteravelino)
-        
-        
-        ## 📝 Licença
-        
-        Copyright © 2020 [Walter Avelino](https://github.com/walteravelino). <br />
-        Os projetos estão sob a licença [MIT](https://github.com/walteravelino/Projetos/blob/master/LICENSE).
-        
-        
-        ## Requerimentos
-        
-        - beautifulsoup4
-        - requests
-        - unidecode
-        
-        
-        ## Instalação
-        
-         A API Wltr EBCT Finder pode ser instalada usando pip:
-        
-            $ pip install wltr-ebct-finder
-        
-        
-        ## Guia rápido
-        
-        Essa API permite consultar os códigos postais e o endereço através da mesma chamada:
-        
-        ```python
-        >>> import wltr_ebct_finder
-        
-        >>> address = wltr_ebct_finder.find_cep('R. Ramiro Barcelos')
-        >>> print(address)
-        {'address': 'Rua Ramiro Barcelos', 'neighborhood': 'Vila Guarani (Z Sul)', 'city/state': 'São Paulo/SP', 'zipcode': '04311-050'}
-        ```
-        
-        ```python
-        >>> import wltr_ebct_finder
-        
-        >>> address = wltr_ebct_finder.find_cep('04311-050')
-        >>> print(address)
-        {'address': 'Rua Ramiro Barcelos', 'neighborhood': 'Vila Guarani (Z Sul)', 'city/state': 'São Paulo/SP', 'zipcode': '04311-050'}
-        ```
-        
 Keywords: cep endereco correios ebct api busca
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
@@ -76,3 +14,61 @@ Classifier: Operating System :: OS Independent
 Classifier: Natural Language :: Portuguese
 Classifier: Intended Audience :: Developers
 Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Wltr EBCT Finder
+
+<a href="https://pypi.org/project/wltr-ebct-finder/">
+  <img alt="PyPI" src="https://img.shields.io/pypi/v/wltr-ebct-finder">
+</a>
+
+[![Build Status](https://travis-ci.com/walteravelino/Projetos.svg?branch=master)](https://travis-ci.com/walteravelino/Projetos)
+<img src = "https://img.shields.io/github/languages/top/walteravelino/wltr-ebct-finder">
+<a href="https://github.com/walteravelino/Projetos/blob/master/LICENSE"><img src = "https://img.shields.io/github/license/walteravelino/Projetos"></a>
+
+Wltr EBCT Finder é uma API para consulta de endereços e CEP através do site da Empresa Brasileira de Correios e Telégrafos.
+
+## Autor
+
+👤 **Walter Avelino**
+
+- StackOverFlow [@walteravelino](https://stackoverflow.com/users/13001807/walter-avelino)
+- Github: [@walteravelino](https://github.com/walteravelino)
+- Linkedin: [@walteravelino](https://linkedin.com/in/walter-avelino-434197105)
+- DEV: [@walteravelino](https://dev.to/walteravelino)
+
+
+## 📝 Licença
+
+Copyright © 2020 [Walter Avelino](https://github.com/walteravelino). <br />
+Os projetos estão sob a licença [MIT](https://github.com/walteravelino/Projetos/blob/master/LICENSE).
+
+
+## Instalação
+
+ A API Wltr EBCT Finder pode ser instalada utilizando o pip:
+
+    $ pip install wltr-ebct-finder
+
+
+## Guia rápido
+
+```python
+>>> import wltr_ebct_finder
+
+>>> address = wltr_ebct_finder.find_data('04311050')
+>>> print(address)
+
+    {'cep': '04311-050',
+     'logradouro': 'Rua Ramiro Barcelos',
+     'complemento': '',
+     'bairro': 'Vila Guarani (Z Sul)',
+     'localidade': 'São Paulo',
+     'uf': 'SP',
+     'ibge': '3550308',
+     'gia': '1004',
+     'ddd': '11',
+     'siafi': '7107'}
+```
+
+

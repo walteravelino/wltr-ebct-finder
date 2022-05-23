@@ -1,3 +1,4 @@
+LICENSE
 README.md
 setup.py
 wltr_ebct_finder/__init__.py
